@@ -11,7 +11,16 @@ gem 'rails',   '~> 3.2'
 
 gem 'sqlite3'
 
+gem 'sqlite3-ruby', '~> 1.3'
 
+group :development do
+  gem 'rspec-rails', '~> 2.13'
+end
+
+group :test do
+  gem 'rspec', '~> 2.13'
+  gem 'webrat', '0.7.3'
+end
 
 # Gems used only for assets and not required
 
@@ -21,7 +30,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.2'
 
   gem 'coffee-rails', '~> 3.2'
-
 
   # See https://github.com/sstephenson/execjs
 #readme for more supported runtimes
